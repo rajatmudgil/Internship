@@ -1,0 +1,81 @@
+/* 
+  (ALL RIGHTS RESERVED) 
+
+CREATED AND DESIGNED BY -:
+
+     RAJAT (+91 9899446742)
+     rajatmudgil24@gmail.com  */
+
+
+     body{
+        margin: 0px;
+        /* font-family: 'Open Sans Condensed', sans-serif !important; */
+        /* background-color: black !important; */
+        background-image: url(../images/wp37411.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    *{
+      box-sizing: border-box;
+    }
+    .left{
+        float: left;
+    }
+    .right{
+        float: right;
+    }
+    .clearfix{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+       
+    }
+    .row{
+        display: flex;
+    }
+    .row1{
+        flex-wrap: wrap;
+    }
+    .row2{
+        column-count: 2;
+    }
+    hr{
+        margin: 0px !important;
+    }
+    
+    /* CONTAINER 1 */
+    #container1 .container-fluid{
+        padding: 0px;
+    }
+    #container1{
+        height: 50% !important ;
+    }
+    #c1{
+        background-color: black !important;
+        color: white !important;
+        font-size: 1.2em ;
+        padding: 0.4% 1% !important;
+        }
+
+    #search{
+        margin-left: 38%;
+        margin-top: 24%;
+
+    }
+    #searchbtn{   
+        margin-left: 54%;
+        margin-top: 8%;
+
+    }
+    #search{
+        padding:1.5%;
+    }
