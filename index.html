@@ -9,10 +9,20 @@
     <link rel="stylesheet" href="./assets/stylesheets/fontawesome-all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="./assets/stylesheets/main.css">
-    <script src="./assets/js/popper.js"></script>
+    <script src="./assets/js/controller.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
     <link rel="stylesheet" href="./assets/Bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/Bootstrap/js/bootstrap.min.js">
+    <link rel="stylesheet" href="./assets/Bootstrap/js/bootstrap.bundle.min.js">
+    <!-- <script>
+        dataObj = {}
+        getdata = function(){
+            var home = document.getElementById('input1').value
+            var online = document.getElementById('input2').value
+            dataObj.home = home;
+            dataObj.online = online;
+            console.log(dataObj);
+        }
+    </script> -->
 </head>
 <body>
 
@@ -31,54 +41,123 @@
         
                 <ul class="navbar-nav ml-auto">
         
-                  <li class="nav-item dropdown">
-                      <a href="#" class="nav-link" data-toggle="dropdown">TUTION <b class="caret"></b>
-                      
-                      </a>
-                      
-                   
+         
+        
+        
+        
+                
+                  <li class="nav-item ">
+                      <a href="#" class="nav-link" data-toggle="modal" data-target="#modal1">           
+            <div class="dropdown" >
+                Tution
+                <div class="dropdown-content ">
+                  <a href="#"  data-toggle="modal" data-target="#modal111">Schools</a>
+                  <a href="#">B.Tech</a>
+                  <a href="#">BBA</a>
+                  <a href="#">MBA</a>
+                  <a href="#">B.com</a>
+                </div>
+              </div>
+            </a>
                   </li>
-        
+                
                   <li class="nav-item dropdown">
-        
-                    <a class="nav-link f12 pr-3" href="our-story.html">Exam Coaching</a>
-        
-                  </li>
-        
+                      <a href="#" class="nav-link" data-toggle="modal" data-target="#modal1">           
+            <div class="dropdown">
+              Exam Coaching
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            </a>
+                  </li>    
+                    
                   <li class="nav-item dropdown">
-        
-                    <a class="nav-link f12 pr-3" href="testimonials.html">IT Courses</a>
-        
-                  </li> 
-                  <li class="nav-item dropdown">
-        
-                      <a class="nav-link f12 pr-3" href="testimonials.html">Languages</a>
-          
-                    </li>                   
-                     <li class="nav-item dropdown">
-                        <a class="nav-link f12 pr-3" href="testimonials.html">More</a>
-                      </li>   
-                  <li class="nav-item hide-small hide-medium">
-        
-                    <a class="nav-link f12 nav-button px-3" href="https://api.whatsapp.com/send?phone=9899446742" target="_blank">ENQUIRY NOW</a>
+                      <a href="#" class="nav-link" data-toggle="modal" data-target="#modal1">           
+            <div class="dropdown">
+               IT Courses 
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            </a>
                   </li>  
+                           
+                  <li class="nav-item dropdown">
+                      <a href="#" class="nav-link" data-toggle="modal" data-target="#modal1">           
+            <div class="dropdown">
+              Languages
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            </a>
+                  </li>
+                  <!-- <li class="nav-item hide-small hide-medium">
+        
+                    <a class="nav-link f12 nav-button px-3" href="https://api.whatsapp.com/send?phone=9899446742" id="c11" target="_blank">ENQUIRY NOW</a>
+                  </li>   -->
                 </ul>
               </div>  
             </div>  
           </nav>
-      
+            <div class="modal" id="modal111">
+                <div class="modal-dialog" id="modal3">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h4 class="modal-title">Find Best Tutions near me</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
     
-  
-          <div id="container11" class="col-xl-7 col-lg-7 col-md-7 col-12">
-        <div class="container-fluid">
+                        <div class="modal-body">
+                            <label>My Home  &nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"><br><br>
+                            <label>I am willing to travel  &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"><br><br>
+                            <label>Want to learn Online via Internet? &nbsp;&nbsp;<a href="#"> Click here  &nbsp;&nbsp;</a></label><input type="checkbox" id="input3" name="input3">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal">Next</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+    
+           
+
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+     
+          <!-- <div id="container11" class="col-xl-7 col-lg-7 col-md-7 col-12">
+        <div class="container-fluid"> -->
           
             <!-- <form class="form-inline my-2 my-lg-0"> -->
-                <input class="form-control mr-sm-2" type="search" placeholder="Search here for best institutions, coaching centres, tutions etc. " aria-label="Search" id="search">
+                <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search here for best institutions, coaching centres, tutions etc. " aria-label="Search" id="search">
                 <button class="btn btn-outline-success col-xl-7 col-lg-7 col-md-7 col-6" type="submit" id="searchbtn">Search 
                 </button>
               </form>
               </div>
-              </div>
+              </div> -->
 
 
      
