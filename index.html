@@ -51,11 +51,11 @@
             <div class="dropdown" >
                 Tution
                 <div class="dropdown-content ">
-                  <a href="#"  data-toggle="modal" data-target="#modal111">Schools</a>
-                  <a href="#">B.Tech</a>
-                  <a href="#">BBA</a>
-                  <a href="#">MBA</a>
-                  <a href="#">B.com</a>
+                  <a href="#"  data-toggle="modal" data-target="#modal01">Schools (XII)</a>
+                  <a href="#"  data-toggle="modal" data-target="#modal008">Schools (Nursery-KG)</a>
+                  <a href="#"  data-toggle="modal" data-target="#modal011">B.Tech</a>
+                  <a href="#"  data-toggle="modal" data-target="#modal010">BSc</a>
+                  <a href="#"  data-toggle="modal" data-target="#modal50">B.com</a>
                 </div>
               </div>
             </a>
@@ -63,11 +63,11 @@
                 
                   <li class="nav-item dropdown">
                       <a href="#" class="nav-link" data-toggle="modal" data-target="#modal1">           
-            <div class="dropdown">
+            <div class="dropdown" >
               Exam Coaching
-                <div class="dropdown-content">
-                  <a href="#">IELTS</a>
-                  <a href="#">GRE</a>
+              <div class="dropdown-content" id="coaching" >
+                <a href="#"  data-toggle="modal" data-target="#modal001">IELETS</a>
+                <a href="#"  data-toggle="modal" data-target="#modal005">GRE</a>
                   <a href="#">GMAT</a>
                   <a href="#">TOEFL</a>
                   <a href="#">Engineering Enterance</a>
@@ -118,7 +118,9 @@
               </div>  
             </div>  
           </nav>
-            <div class="modal" id="modal111">
+
+          <!-- modal 1 -->
+            <div class="modal" id="modal01">
                 <div class="modal-dialog" id="modal3">
                     <div class="modal-content">
 
@@ -134,8 +136,8 @@
                             <label>Want to learn Online via Internet? &nbsp;&nbsp;<a href="#"> Click here  &nbsp;&nbsp;</a></label><input type="checkbox" id="input3" name="input3">
                         </div>
                         <div class="modal-footer">
-                            <!-- <a href="#"  data-toggle="modal" data-target="#modal111">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a> -->
-                            <a href="#"  data-toggle="modal" data-target="#modal222">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+                            <!-- <a href="#"  data-toggle="modal" data-target="#modal01">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a> -->
+                            <a href="#"  data-toggle="modal" data-target="#modal02">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
                             
                         </div>
 
@@ -147,7 +149,7 @@
             </div>
 
 <!-- modal 2 -->
-            <div class="modal" id="modal222">
+            <div class="modal" id="modal02">
                 <div class="modal-dialog" id="modal3">
                     <div class="modal-content">
 
@@ -167,8 +169,8 @@
                             <label>IGCSE &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"><br>
                         </div>
                         <div class="modal-footer">
-                            <a href="#"  data-toggle="modal" data-target="#modal111">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a>
-                            <a href="#"  data-toggle="modal" data-target="#modal333">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+                            <a href="#"  data-toggle="modal" data-target="#modal01">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                            <a href="#"  data-toggle="modal" data-target="#modal03">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
 
                         </div>
 
@@ -181,7 +183,7 @@
     
            <!-- modal3 -->
            
-           <div class="modal" id="modal333">
+           <div class="modal" id="modal03">
               <div class="modal-dialog" id="modal3">
                   <div class="modal-content">
 
@@ -190,22 +192,33 @@
                           <button type="button" class="close" data-dismiss="modal">&times;</button>
                       </div> 
                       <br>
-                      <h5>&nbsp;Which of the subjects do you need tution for ? </h5>
-                      <div class="modal-body ">
-                          <label>Accountancy &nbsp;&nbsp;</label><input type="checkbox"  id="input1" name="input1"> 
-                          <label>English&nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"> 
-                          <label>Chemistry &nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"> 
-                          <label>Economics &nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4">
-                       <label>Biochemistry &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"> 
-                          <label>Biology &nbsp;&nbsp;</label><input type="checkbox" id="input6" name="input6"> 
-                          <label>Physics &nbsp;&nbsp;</label><input type="checkbox" id="input7" name="input7"> 
-                          <label>Computer Science &nbsp;&nbsp;</label><input type="checkbox" id="input8" name="input8"> 
-                          <label>Mathematics &nbsp;&nbsp;</label><input type="checkbox" id="input9" name="input9"> 
-                          <label>Geography &nbsp;&nbsp;</label><input type="checkbox" id="input10" name="input10"> 
+                      <h5>&nbsp;Which of the following CBSE subjects do you need tution for ? </h5>
+                      <div class="modal-body " class="dropdown-content" id="coaching">
+                      
+                          <label>Accountancy &nbsp;&nbsp;</label><input type="checkbox"  id="input1" name="input1"> <br>
+                          <label>English&nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"> <br>
+                          <label>Chemistry &nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"> <br>
+                          <label>Economics &nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4"> <br>
+                          <label>Biotechnology &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"> <br>
+                          <label>Biology &nbsp;&nbsp;</label><input type="checkbox" id="input6" name="input6"> <br>
+                          <label>Physics &nbsp;&nbsp;</label><input type="checkbox" id="input7" name="input7"> <br>
+                          <label>Computer Science &nbsp;&nbsp;</label><input type="checkbox" id="input8" name="input8"> <br>
+                          <label>Mathematics &nbsp;&nbsp;</label><input type="checkbox" id="input9" name="input9"> <br>
+                          <label>Geography &nbsp;&nbsp;</label><input type="checkbox" id="input10" name="input10"> <br>
+                          <label>History &nbsp;&nbsp;</label><input type="checkbox"  id="input1" name="input1"> <br>
+                          <label>Legal Studies&nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"> <br>
+                          <label>Physical Education &nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"> <br>
+                          <label>Political Science &nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4"> <br>
+                          <label>Sociology &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"> <br>
+                          <label>Home Science &nbsp;&nbsp;</label><input type="checkbox" id="input6" name="input6"> <br>
+                          <label>Philosphy &nbsp;&nbsp;</label><input type="checkbox" id="input7" name="input7"> <br>
+                          <label>Business Studies &nbsp;&nbsp;</label><input type="checkbox" id="input8" name="input8"> <br>
+                          <label>Psychology&nbsp;&nbsp;</label><input type="checkbox" id="input9" name="input9"> <br>
+                          <label>Hindi &nbsp;&nbsp;</label><input type="checkbox" id="input10" name="input10"> <br>
                       </div>
                       <div class="modal-footer">
-                          <a href="#"  data-toggle="modal" data-target="#modal222">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a>
-                          <a href="#"  data-toggle="modal" data-target="#modal444">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+                          <a href="#"  data-toggle="modal" data-target="#modal02">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                          <a href="#"  data-toggle="modal" data-target="#modal04">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
                       </div>
 
                   </div>
@@ -216,7 +229,7 @@
           </div>
           <!-- modal4 -->
           
-          <div class="modal" id="modal444">
+          <div class="modal" id="modal04">
               <div class="modal-dialog" id="modal3">
                   <div class="modal-content">
 
@@ -225,33 +238,44 @@
                           <button type="button" class="close" data-dismiss="modal">&times;</button>
                       </div>
                       <br>
-                      <h5>&nbsp;Which of the subjects do you need tution for ?</h5>
+                      <h5>&nbsp;Which of the following ISC/ICSE subjects do you require tution for?</h5>
   
-                      <div class="modal-body ">
-                        <label>History &nbsp;&nbsp;</label><input type="checkbox"  id="input1" name="input1"> 
-                        <label>Legal Studies&nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"> 
-                        <label>Physical Education &nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"> 
-                        <label>Political Science &nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4">
-                     <label>Sociology &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"> 
-                        <label>Home Science &nbsp;&nbsp;</label><input type="checkbox" id="input6" name="input6"> 
-                        <label>Philosphy &nbsp;&nbsp;</label><input type="checkbox" id="input7" name="input7"> 
-                        <label>Business Studies &nbsp;&nbsp;</label><input type="checkbox" id="input8" name="input8"> 
-                        <label>Psycology&nbsp;&nbsp;</label><input type="checkbox" id="input9" name="input9"> 
-                        <label>Hindi &nbsp;&nbsp;</label><input type="checkbox" id="input10" name="input10"> 
+                      <div class="modal-body " >
+                            <label>English &nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"><br>
+                            <label>Hindi &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"><br>
+                            <label>Physics &nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"><br>
+                            <label>Biology &nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4"><br>
+                            <label>Account &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"><br>
+                            <label>English Literature &nbsp;&nbsp;</label><input type="checkbox" id="input6" name="input6"><br>
+                            <label>Mathematics &nbsp;&nbsp;</label><input type="checkbox" id="input7" name="input7"><br>
+                            <label>Chemistry &nbsp;&nbsp;</label><input type="checkbox" id="input8" name="input8"><br>
+                            <label>Economics &nbsp;&nbsp;</label><input type="checkbox" id="input9" name="input9"><br>
+                            <label>Commerce &nbsp;&nbsp;</label><input type="checkbox" id="input10" name="input10"><br>
+                            <label>History &nbsp;&nbsp;</label><input type="checkbox" id="input11" name="input11"><br>
+                            <label>Psychology &nbsp;&nbsp;</label><input type="checkbox" id="input12" name="input12"><br>
+                            <label>Computer Science &nbsp;&nbsp;</label><input type="checkbox" id="input13" name="input13"><br>
+                            <label>Physical Education &nbsp;&nbsp;</label><input type="checkbox" id="input14" name="input14"><br>
+                            <label>Chinese &nbsp;&nbsp;</label><input type="checkbox" id="input15" name="input15"><br>
+                            <label>Geography &nbsp;&nbsp;</label><input type="checkbox" id="input16" name="input16"><br>
+                            <label>EVS &nbsp;&nbsp;</label><input type="checkbox" id="input17" name="input17"><br>
+                            <label>Political Science &nbsp;&nbsp;</label><input type="checkbox" id="input18" name="input18"><br>
+                            <label>French &nbsp;&nbsp;</label><input type="checkbox" id="input19" name="input19"><br>
+                            <label>German &nbsp;&nbsp;</label><input type="checkbox" id="input20" name="input20"><br>
+    
                         </div>
                       <div class="modal-footer">
-                          <a href="#"  data-toggle="modal" data-target="#modal333">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
-                          <a href="#"  data-toggle="modal" data-target="#modal555">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+                          <a href="#"  data-toggle="modal" data-target="#modal03">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                          <a href="#"  data-toggle="modal" data-target="#modal05">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
                       </div>
 
                   </div>
               </div>
 
-
+<!-- modal5 -->
 
           </div>
 
-          <div class="modal" id="modal555">
+          <div class="modal" id="modal05">
             <div class="modal-dialog" id="modal3">
                 <div class="modal-content">
 
@@ -260,18 +284,49 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <br>
-                    <h5>&nbsp; Which board of education is you looking for ?</h5>
+                    <h5>&nbsp; Which of the following State Syllabus subjects do you require tution for? </h5>
 
 
                     <div class="modal-body">
-                        <label>CBSE &nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"><br><br>
-                        <label>ISE / ICSE &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"><br><br>
-                        <label>State &nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"><br><br>
-                        <label>International Baccalaurete &nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4"><br><br>
-                        <label>IGCSE &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"><br>
+                            <label>English &nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"><br>
+                            <label>Physics &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"><br>
+                            <label>Biology&nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"><br>
+                            <label>Geography &nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4"><br>
+                            <label>Hindi &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"><br>
+                            <label>Mathematics &nbsp;&nbsp;</label><input type="checkbox" id="input6" name="input6"><br>
+                            <label>Chemistry &nbsp;&nbsp;</label><input type="checkbox" id="input7" name="input7"><br>
+                            <label>History &nbsp;&nbsp;</label><input type="checkbox" id="input8" name="input8"><br>
+                            <label>Economics &nbsp;&nbsp;</label><input type="checkbox" id="input9" name="input9"><br>
+                            <label>Accountancy &nbsp;&nbsp;</label><input type="checkbox" id="input10" name="input10"><br>
+                            <label>Statistics &nbsp;&nbsp;</label><input type="checkbox" id="input11" name="input11"><br>
+                            <label>Political Science &nbsp;&nbsp;</label><input type="checkbox" id="input12" name="input12"><br>
+                            <label>Computer Science &nbsp;&nbsp;</label><input type="checkbox" id="input13" name="input13"><br>
+                            <label>Electronics &nbsp;&nbsp;</label><input type="checkbox" id="input14" name="input14"><br>
+                            <label>Home Science &nbsp;&nbsp;</label><input type="checkbox" id="input15" name="input15"><br>
+                            <label>Psychology &nbsp;&nbsp;</label><input type="checkbox" id="input16" name="input16"><br>
+                            <label>Business Studies &nbsp;&nbsp;</label><input type="checkbox" id="input17" name="input17"><br>
+                            <label>Geology &nbsp;&nbsp;</label><input type="checkbox" id="input18" name="input18"><br>
+                            <label>Education &nbsp;&nbsp;</label><input type="checkbox" id="input19" name="input19"><br>
+                            <label>Logic &nbsp;&nbsp;</label><input type="checkbox" id="input20" name="input20"><br>   
+                            <label>Sociology &nbsp;&nbsp;</label><input type="checkbox" id="input21" name="input21"><br>
+                            <label>French &nbsp;&nbsp;</label><input type="checkbox" id="input22" name="input22"><br>
+                            <label>Tamil &nbsp;&nbsp;</label><input type="checkbox" id="input23" name="input23"><br>
+                            <label>Kannada &nbsp;&nbsp;</label><input type="checkbox" id="input24" name="input24"><br>
+                            <label>Malayalam &nbsp;&nbsp;</label><input type="checkbox" id="input25" name="input25"><br>
+                            <label>Sanskrit &nbsp;&nbsp;</label><input type="checkbox" id="input26" name="input26"><br>
+                            <label>Telugu &nbsp;&nbsp;</label><input type="checkbox" id="input27" name="input27"><br>
+                            <label>Urdu &nbsp;&nbsp;</label><input type="checkbox" id="input28" name="input28"><br>
+                            <label>Gujarati &nbsp;&nbsp;</label><input type="checkbox" id="input29" name="input29"><br>
+                            <label>Marathi &nbsp;&nbsp;</label><input type="checkbox" id="input30" name="input30"><br>
+                            <label>Oriya &nbsp;&nbsp;</label><input type="checkbox" id="input31" name="input31"><br>
+                            <label>Punjabi &nbsp;&nbsp;</label><input type="checkbox" id="input32" name="input32"><br>
+                            <label>Organisation of Commerce&nbsp;&nbsp;</label><input type="checkbox" id="input33" name="input33"><br>
+                            <label>Secretarial Practices &nbsp;&nbsp;</label><input type="checkbox" id="input34" name="input34"><br>
+                           
                     </div>
                     <div class="modal-footer">
-                        <a href="#"  data-toggle="modal" data-target="#modal333">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+                            <a href="#"  data-toggle="modal" data-target="#modal04">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                             <a href="#"  data-toggle="modal" data-target="#modal06">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
 
                     </div>
 
@@ -281,68 +336,12 @@
 
 
         </div>
-
-        <div class="modal" id="modal666">
-          <div class="modal-dialog" id="modal3">
-              <div class="modal-content">
-
-                  <div class="modal-header">
-                      <h4 class="modal-title"><b>Find Best class 12 Tutions near me </b></h4>
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  </div>
-                  <br>
-                  <h5>&nbsp; Which board of education is you looking for ?</h5>
-
-
-                  <div class="modal-body">
-                      <label>CBSE &nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"><br><br>
-                      <label>ISE / ICSE &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"><br><br>
-                      <label>State &nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"><br><br>
-                      <label>International Baccalaurete &nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4"><br><br>
-                      <label>IGCSE &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"><br>
-                  </div>
-                  <div class="modal-footer">
-                      <a href="#"  data-toggle="modal" data-target="#modal333">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
-
-                  </div>
-
-              </div>
-          </div>
-
-
-
-      </div>
-      <div class="modal" id="modal777">
-        <div class="modal-dialog" id="modal3">
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <h4 class="modal-title"><b>Find Best class 12 Tutions near me </b></h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <br>
-                <h5>&nbsp; Which board of education is you looking for ?</h5>
-
-
-                <div class="modal-body">
-                    <label>CBSE &nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"><br><br>
-                    <label>ISE / ICSE &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"><br><br>
-                    <label>State &nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"><br><br>
-                    <label>International Baccalaurete &nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4"><br><br>
-                    <label>IGCSE &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"><br>
-                </div>
-                <div class="modal-footer">
-                    <a href="#"  data-toggle="modal" data-target="#modal333">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
-
-                </div>
-
-            </div>
-        </div>
-
-
+        
+        <!-- modal6 -->
 
     </div>
-    <div class="modal" id="modal888">
+
+    <div class="modal" id="modal06">
       <div class="modal-dialog" id="modal3">
           <div class="modal-content">
 
@@ -351,18 +350,34 @@
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
               <br>
-              <h5>&nbsp; Which board of education is you looking for ?</h5>
+              <h5>&nbsp; Which of the following International Baccalaureate subjects do you require tution for? </h5>
 
 
               <div class="modal-body">
-                  <label>CBSE &nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"><br><br>
-                  <label>ISE / ICSE &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"><br><br>
-                  <label>State &nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"><br><br>
-                  <label>International Baccalaurete &nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4"><br><br>
-                  <label>IGCSE &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"><br>
+                   
+                    <label>English &nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"><br>
+                    <label>Physics &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"><br>
+                    <label>Biology&nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"><br>
+                    <label>Geography &nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4"><br>
+                    <label>Hindi &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"><br>
+                    <label>Mathematics &nbsp;&nbsp;</label><input type="checkbox" id="input6" name="input6"><br>
+                    <label>Chemistry &nbsp;&nbsp;</label><input type="checkbox" id="input7" name="input7"><br>
+                    <label>History &nbsp;&nbsp;</label><input type="checkbox" id="input8" name="input8"><br>
+                    <label>Economics &nbsp;&nbsp;</label><input type="checkbox" id="input9" name="input9"><br>
+                    <label>Business and Management &nbsp;&nbsp;</label><input type="checkbox" id="input10" name="input10"><br>
+                    <label>EVS &nbsp;&nbsp;</label><input type="checkbox" id="input11" name="input11"><br>
+                    <label>Sports &nbsp;&nbsp;</label><input type="checkbox" id="input12" name="input12"><br>
+                    <label>French &nbsp;&nbsp;</label><input type="checkbox" id="input13" name="input13"><br>
+                    <label>Chinese &nbsp;&nbsp;</label><input type="checkbox" id="input14" name="input14"><br>
+                    <label>Japanese &nbsp;&nbsp;</label><input type="checkbox" id="input15" name="input15"><br>
+                    <label>Computer Science &nbsp;&nbsp;</label><input type="checkbox" id="input16" name="input16"><br>
+                    <label>Information Tecnology &nbsp;&nbsp;</label><input type="checkbox" id="input17" name="input17"><br>
+                    <label>Spanish &nbsp;&nbsp;</label><input type="checkbox" id="input18" name="input18"><br>
+                    <label>German &nbsp;&nbsp;</label><input type="checkbox" id="input19" name="input19"><br>
               </div>
               <div class="modal-footer">
-                  <a href="#"  data-toggle="modal" data-target="#modal333">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+                      <a href="#"  data-toggle="modal" data-target="#modal05">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                       <a href="#"  data-toggle="modal" data-target="#modal07">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
 
               </div>
 
@@ -372,38 +387,521 @@
 
 
   </div>
-  <div class="modal" id="modal999">
-    <div class="modal-dialog" id="modal3">
-        <div class="modal-content">
 
-            <div class="modal-header">
-                <h4 class="modal-title"><b>Find Best class 12 Tutions near me </b></h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <br>
-            <h5>&nbsp; Which board of education is you looking for ?</h5>
+        <!-- modal7 -->
 
-
-            <div class="modal-body">
-                <label>CBSE &nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"><br><br>
-                <label>ISE / ICSE &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"><br><br>
-                <label>State &nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"><br><br>
-                <label>International Baccalaurete &nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4"><br><br>
-                <label>IGCSE &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"><br>
-            </div>
-            <div class="modal-footer">
-                <a href="#"  data-toggle="modal" data-target="#modal333">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
-
-            </div>
-
-        </div>
     </div>
+
+    <div class="modal" id="modal07">
+      <div class="modal-dialog" id="modal3">
+          <div class="modal-content">
+
+              <div class="modal-header">
+                  <h4 class="modal-title"><b>Find Best class 12 Tutions near me </b></h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <br>
+              <h5>&nbsp; Which of the following IGCSE subjects do you require tution for? </h5>
+
+
+              <div class="modal-body">
+                  <label>English &nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"><br>
+                  <label>Mathematics &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"><br>
+                  <label>Chemistry &nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"><br>
+                  <label>Hindi &nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4"><br>
+                  <label>Environmental Management &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"><br>
+                  <label>English Literature &nbsp;&nbsp;</label><input type="checkbox" id="input6" name="input6"><br>
+                  <label>Physics &nbsp;&nbsp;</label><input type="checkbox" id="input7" name="input7"><br>
+                  <label>Biology &nbsp;&nbsp;</label><input type="checkbox" id="input8" name="input8"><br>
+                  <label>Sanskrit &nbsp;&nbsp;</label><input type="checkbox" id="input9" name="input9"><br>
+                  <label>History &nbsp;&nbsp;</label><input type="checkbox" id="input10" name="input10"><br>
+                  <label>Geography &nbsp;&nbsp;</label><input type="checkbox" id="input11" name="input11"><br>
+                  <label>Economics &nbsp;&nbsp;</label><input type="checkbox" id="input12" name="input12"><br>
+                  <label>Psychology &nbsp;&nbsp;</label><input type="checkbox" id="input13" name="input13"><br>
+                  <label>French &nbsp;&nbsp;</label><input type="checkbox" id="input14" name="input14"><br>
+                  <label>Chinese &nbsp;&nbsp;</label><input type="checkbox" id="input15" name="input15"><br>
+                  <label>Social Science &nbsp;&nbsp;</label><input type="checkbox" id="input16" name="input16"><br>
+                  <label>Law &nbsp;&nbsp;</label><input type="checkbox" id="input17" name="input17"><br>
+                  <label>Sociology &nbsp;&nbsp;</label><input type="checkbox" id="input18" name="input18"><br>
+                  <label>German &nbsp;&nbsp;</label><input type="checkbox" id="input19" name="input19"><br>
+                  <label>Japanese &nbsp;&nbsp;</label><input type="checkbox" id="input20" name="input20"><br>   
+                  <label>Urdu &nbsp;&nbsp;</label><input type="checkbox" id="input21" name="input21"><br>
+                  <label>Accounts &nbsp;&nbsp;</label><input type="checkbox" id="input22" name="input22"><br>
+                  <label>Spanish &nbsp;&nbsp;</label><input type="checkbox" id="input23" name="input23"><br>
+                  <label>Business Studies &nbsp;&nbsp;</label><input type="checkbox" id="input24" name="input24"><br>
+                  <label>Other &nbsp;&nbsp;</label><input type="checkbox" id="input25" name="input25"><br>
+                 
+
+              </div>
+              <div class="modal-footer">
+                      <a href="#"  data-toggle="modal" data-target="#modal06">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                       <a href="#"  data-toggle="modal" data-target="#modal08">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+
+              </div>
+
+          </div>
+      </div>
+
+
+
+  </div>
+     <!-- modal8 -->
+
+    </div>
+
+    <div class="modal" id="modal008">
+      <div class="modal-dialog" id="modal3">
+          <div class="modal-content">
+
+              <div class="modal-header">
+                  <h4 class="modal-title"><b>Find Best Nursery-KG Tution near me </b></h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <br>
+              <h5>&nbsp; Please select subject </h5>
+
+
+              <div class="modal-body">
+                  <label>English &nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"><br><br>
+                  <label>EVS &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"><br><br>
+                  <label>Mathematics &nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"><br><br>
+                  <label>Drawing&nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4"><br><br>
+                 
+              </div>
+              <div class="modal-footer">
+                      <a href="#"  data-toggle="modal" data-target="#modal07">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                       <a href="#"  data-toggle="modal" data-target="#modal09">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+
+              </div>
+
+          </div>
+      </div>
+
+
+
+  </div>
+
+   <!-- modal9 -->
+
+</div>
+
+<div class="modal" id="modal011">
+  <div class="modal-dialog" id="modal3">
+      <div class="modal-content">
+
+          <div class="modal-header">
+              <h4 class="modal-title"><b>Find Best BTech Tution near me </b></h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <br>
+          <h5>&nbsp; Are you looking for private or group classes? </h5>
+
+
+          <div class="modal-body">
+              <label>One on one / Private Tutions &nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"><br><br>
+              <label>Group Classes &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"><br><br>
+            
+             
+          </div>
+          <div class="modal-footer">
+                  <a href="#"  data-toggle="modal" data-target="#modal08">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                   <a href="#"  data-toggle="modal" data-target="#modal10">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+
+          </div>
+
+      </div>
+  </div>
 
 
 
 </div>
 
+ <!-- modal10 -->
 
+</div>
+
+<div class="modal" id="modal10">
+  <div class="modal-dialog" id="modal3">
+      <div class="modal-content">
+
+          <div class="modal-header">
+              <h4 class="modal-title"><b>Find Best BTech Tution near me </b></h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <br>
+          <h5>&nbsp; Which of the following BTech branch have you opted for? </h5>
+
+
+          <div class="modal-body">
+              <label>BTech Computer Science Engineering &nbsp;&nbsp;</label><input type="radio" id="input1" name="input1"><br>
+              <label>BTech Mechanical Engineering &nbsp;&nbsp;</label><input type="radio" id="input2" name="input2"><br>
+              <label>BTech Civil Engineering &nbsp;&nbsp;</label><input type="radio" id="input3" name="input3"><br>
+              <label>BTech Electrical & Electronics &nbsp;&nbsp;</label><input type="radio" id="input4" name="input4"><br>
+              <label>BTech Chemical Engineering  &nbsp;&nbsp;</label><input type="radio" id="input5" name="input5"><br>
+              <label>Industrial Engineering &nbsp;&nbsp;</label><input type="radio" id="input6" name="input6"><br>
+              <label>BTech 1st Year Engineering &nbsp;&nbsp;</label><input type="radio" id="input7" name="input7"><br>
+              <label>BTech Electriacl & Communication Engineering &nbsp;&nbsp;</label><input type="radio" id="input8" name="input8"><br>
+              <label>BTech Aeronautical Engineering &nbsp;&nbsp;</label><input type="radio" id="input9" name="input9"><br>
+              <label>BTech Automobile Engineering &nbsp;&nbsp;</label><input type="radio" id="input10" name="input10"><br>
+              <label>BTech Biotechnology Engineering &nbsp;&nbsp;</label><input type="radio" id="input11" name="input11"><br>
+              <label>BTech Instrumentation Engineering &nbsp;&nbsp;</label><input type="radio" id="input12" name="input12"><br>
+              <label>BTech Mechantronics Engineering &nbsp;&nbsp;</label><input type="radio" id="input13" name="input13"><br>
+              <label>BTech Metallurgical & Materials Engineering &nbsp;&nbsp;</label><input type="radio" id="input14" name="input14"><br>
+              <label>Telecom Engineering &nbsp;&nbsp;</label><input type="radio" id="input15" name="input15"><br>
+              <label>Other Engineering Topics &nbsp;&nbsp;</label><input type="radio" id="input16" name="input16"><br>
+             
+            
+             
+          </div>
+          <div class="modal-footer">
+                  <a href="#"  data-toggle="modal" data-target="#modal09">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                   <a href="#"  data-toggle="modal" data-target="#modal11">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+
+          </div>
+
+      </div>
+  </div>
+
+
+
+</div>
+  
+<!-- modal11 -->
+
+</div>
+
+<div class="modal" id="modal11">
+  <div class="modal-dialog" id="modal3">
+      <div class="modal-content">
+
+          <div class="modal-header">
+              <h4 class="modal-title"><b>Find Best BTech Tution near me </b></h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <br>
+          <h5>&nbsp; Which of the following BTech Computer Science subjects do you require tution for? </h5>
+
+
+          <div class="modal-body">
+                <label>Artificial Intelligence &nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"><br>
+                <label>Bioinformatics &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"><br>
+                <label>Combinatorics &nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"><br>
+                <label>Computer Architecture &nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4"><br>
+                <label>Computer Hardware &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"><br>
+                <label>Big Data Ananlytics &nbsp;&nbsp;</label><input type="checkbox" id="input6" name="input6"><br>
+                <label>Building Enterprise Application &nbsp;&nbsp;</label><input type="checkbox" id="input7" name="input7"><br>
+                <label>Compiler Design &nbsp;&nbsp;</label><input type="checkbox" id="input8" name="input8"><br>
+                <label>Computer Grapics and Multimedia &nbsp;&nbsp;</label><input type="checkbox" id="input9" name="input9"><br>
+                <label>Computer Networks &nbsp;&nbsp;</label><input type="checkbox" id="input10" name="input10"><br>
+                <label>Computer Organization & Design &nbsp;&nbsp;</label><input type="checkbox" id="input11" name="input11"><br>
+                <label>Data Structures and Algorithms &nbsp;&nbsp;</label><input type="checkbox" id="input12" name="input12"><br>
+                <label>Database Management Systems &nbsp;&nbsp;</label><input type="checkbox" id="input13" name="input13"><br>
+                <label>Design of Digital Systems &nbsp;&nbsp;</label><input type="checkbox" id="input14" name="input14"><br>
+                <label>Information Retrieval &nbsp;&nbsp;</label><input type="checkbox" id="input15" name="input15"><br>
+                <label>Data Communication &nbsp;&nbsp;</label><input type="checkbox" id="input16" name="input16"><br>
+                <label>Data Warehouse and Data Mining &nbsp;&nbsp;</label><input type="checkbox" id="input17" name="input17"><br>
+                <label>Design and Analysis of Algorithms &nbsp;&nbsp;</label><input type="checkbox" id="input18" name="input18"><br>
+                <label>Game Programming &nbsp;&nbsp;</label><input type="checkbox" id="input19" name="input19"><br>
+                <label>Information Security &nbsp;&nbsp;</label><input type="checkbox" id="input20" name="input20"><br>   
+                <label>Internet Technology and Applications &nbsp;&nbsp;</label><input type="checkbox" id="input21" name="input21"><br>
+                <label>Linux Programming &nbsp;&nbsp;</label><input type="checkbox" id="input22" name="input22"><br>
+                <label>Machine Learning &nbsp;&nbsp;</label><input type="checkbox" id="input23" name="input23"><br>
+                <label>Mobile Application Development &nbsp;&nbsp;</label><input type="checkbox" id="input24" name="input24"><br>
+                <label>Natural Language Processing &nbsp;&nbsp;</label><input type="checkbox" id="input25" name="input25"><br>
+                <label>Java Programming &nbsp;&nbsp;</label><input type="checkbox" id="input26" name="input26"><br>
+                <label>Machine Intelligence &nbsp;&nbsp;</label><input type="checkbox" id="input27" name="input27"><br>
+                <label>Microprocessors &nbsp;&nbsp;</label><input type="checkbox" id="input28" name="input28"><br>
+                <label>Multimedia and Virtual Reality &nbsp;&nbsp;</label><input type="checkbox" id="input29" name="input29"><br>
+                <label>Network Management & Design &nbsp;&nbsp;</label><input type="checkbox" id="input30" name="input30"><br>
+                <label>Network Processors &nbsp;&nbsp;</label><input type="checkbox" id="input31" name="input31"><br>
+                <label>Netowrk Security &nbsp;&nbsp;</label><input type="checkbox" id="input32" name="input32"><br>
+                <label>Number Theory and Cryptography &nbsp;&nbsp;</label><input type="checkbox" id="input33" name="input33"><br>
+                <label>Object Oriented Programming & Systems &nbsp;&nbsp;</label><input type="checkbox" id="input34" name="input34"><br>
+                <label>Object Technology &nbsp;&nbsp;</label><input type="checkbox" id="input35" name="input35"><br>
+                <label>Product Realization with Hardware-Software Interface &nbsp;&nbsp;</label><input type="checkbox" id="input36" name="input36"><br>
+                <label>Protocol Engineering &nbsp;&nbsp;</label><input type="checkbox" id="input37" name="input37"><br>
+                <label>Performance Modelling and Analysis &nbsp;&nbsp;</label><input type="checkbox" id="input38" name="input38"><br>
+                <label>Programming in C# &nbsp;&nbsp;</label><input type="checkbox" id="input39" name="input39"><br>
+                <label>Simulation and Modelling &nbsp;&nbsp;</label><input type="checkbox" id="input40" name="input40"><br>   
+                <label>Social Network Analysis &nbsp;&nbsp;</label><input type="checkbox" id="input41" name="input41"><br>
+                <label>Software Project Management &nbsp;&nbsp;</label><input type="checkbox" id="input42" name="input42"><br>
+                <label>Software Testing and Analysis &nbsp;&nbsp;</label><input type="checkbox" id="input43" name="input43"><br>
+                <label>Switching Circuits & Logic Design &nbsp;&nbsp;</label><input type="checkbox" id="input44" name="input44"><br>
+                <label>Types of Database Systems &nbsp;&nbsp;</label><input type="checkbox" id="input45" name="input45"><br>
+                <label>Software Engineering and Architecture &nbsp;&nbsp;</label><input type="checkbox" id="input46" name="input46"><br>
+                <label>Software Quality Assurance &nbsp;&nbsp;</label><input type="checkbox" id="input47" name="input47"><br>
+                <label>Storage Device and Technology &nbsp;&nbsp;</label><input type="checkbox" id="input48" name="input48"><br>
+                <label>Types and Optimization of Computing Systems &nbsp;&nbsp;</label><input type="checkbox" id="input49" name="input49"><br>
+                <label>Unix Network Programming &nbsp;&nbsp;</label><input type="checkbox" id="input50" name="input50"><br>
+               
+          </div>
+          <div class="modal-footer">
+                  <a href="#"  data-toggle="modal" data-target="#modal10">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                   <a href="#"  data-toggle="modal" data-target="#modal12">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+
+          </div>
+
+      </div>
+  </div>
+
+
+
+</div>
+
+<!-- modal12 -->
+
+</div>
+
+<div class="modal" id="modal12">
+  <div class="modal-dialog" id="modal3">
+      <div class="modal-content">
+
+          <div class="modal-header">
+              <h4 class="modal-title"><b>Find Best BTech Tution near me </b></h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <br>
+          <h5>&nbsp; Which of the following BTech Electrical & Electronics subjects do you require tution for?</h5>
+
+
+          <div class="modal-body">
+              <label>Algorithms and Data Structures &nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"><br>
+              <label>Analog and Digital Communication &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"><br>
+              <label>Building Automation Systems &nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"><br>
+              <label>Communication Systems &nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4"><br>
+              <label>Computer Control of Energy Systems  &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"><br>
+              <label>Alternative Energy Sources &nbsp;&nbsp;</label><input type="checkbox" id="input6" name="input6"><br>
+              <label>Applications of Digital Signal Processing (DSP) &nbsp;&nbsp;</label><input type="checkbox" id="input7" name="input7"><br>
+              <label>Circuit Theory &nbsp;&nbsp;</label><input type="checkbox" id="input8" name="input8"><br>
+              <label>Commutator Machines &nbsp;&nbsp;</label><input type="checkbox" id="input9" name="input9"><br>
+              <label>Computer Networks &nbsp;&nbsp;</label><input type="checkbox" id="input10" name="input10"><br>
+              <label>Condition Monitoring Techniques For Electrical Equipments &nbsp;&nbsp;</label><input type="checkbox" id="input11" name="input11"><br>
+              <label>Control Systems &nbsp;&nbsp;</label><input type="checkbox" id="input12" name="input12"><br>
+              <label>Data Structures & Algorithms  &nbsp;&nbsp;</label><input type="checkbox" id="input13" name="input13"><br>
+              <label>(Dc-Ac) Direct Current-Alternating Current System Interaction&nbsp;&nbsp;</label><input type="checkbox" id="input14" name="input14"><br>
+              <label>Design of Intelligent Electronic Devices &nbsp;&nbsp;</label><input type="checkbox" id="input15" name="input15"><br>
+              <label>Database Management Systems &nbsp;&nbsp;</label><input type="checkbox" id="input16" name="input16"><br>
+              <label>Design of Embedded Controllers &nbsp;&nbsp;</label><input type="checkbox" id="input17" name="input17"><br>
+              <label>Digital Computer Organiztion and Architecture &nbsp;&nbsp;</label><input type="checkbox" id="input18" name="input18"><br>
+              <label>Digital Control Systems &nbsp;&nbsp;</label><input type="checkbox" id="input19" name="input19"><br>
+              <label>Direct Energy Conversation &nbsp;&nbsp;</label><input type="checkbox" id="input20" name="input20"><br>   
+              <label>Discrete Fourier Transforms and Digital Filter Design &nbsp;&nbsp;</label><input type="checkbox" id="input21" name="input21"><br>
+              <label>Electric Drives &nbsp;&nbsp;</label><input type="checkbox" id="input22" name="input22"><br>
+              <label>Electric Power Quality &nbsp;&nbsp;</label><input type="checkbox" id="input23" name="input23"><br>
+              <label>Electrical Circuit Analysis &nbsp;&nbsp;</label><input type="checkbox" id="input24" name="input24"><br>
+              <label>Distribution Systems Automation, Planning and Control &nbsp;&nbsp;</label><input type="checkbox" id="input25" name="input25"><br>
+              <label>Electric Energy Systems &nbsp;&nbsp;</label><input type="checkbox" id="input26" name="input26"><br>
+              <label>Electric Power Stations &nbsp;&nbsp;</label><input type="checkbox" id="input27" name="input27"><br>
+              <label>Electrical Machinery &nbsp;&nbsp;</label><input type="checkbox" id="input28" name="input28"><br>
+              <label>Electromagnetic Theory &nbsp;&nbsp;</label><input type="checkbox" id="input29" name="input29"><br>
+              <label>Embedded Processor Architecture  &nbsp;&nbsp;</label><input type="checkbox" id="input30" name="input30"><br>
+              <label>Energy Management & Auditing &nbsp;&nbsp;</label><input type="checkbox" id="input31" name="input31"><br>
+              <label>Flexible Ac Transmission Systems &nbsp;&nbsp;</label><input type="checkbox" id="input32" name="input32"><br>
+              <label>High-Voltage Direct Current (Hdvc) &nbsp;&nbsp;</label><input type="checkbox" id="input33" name="input33"><br>
+              <label>Electronic Measurements and Instrumentation &nbsp;&nbsp;</label><input type="checkbox" id="input34" name="input34"><br>
+              <label>(EMI) Electromagnetic Interference Testing and Design For Compatibility &nbsp;&nbsp;</label><input type="checkbox" id="input35" name="input35"><br>
+              <label>Finite Element Method and Applications &nbsp;&nbsp;</label><input type="checkbox" id="input36" name="input36"><br>
+              <label>Fuzzy-Neural Control &nbsp;&nbsp;</label><input type="checkbox" id="input37" name="input37"><br>
+              <label>Electric Power Transmission &nbsp;&nbsp;</label><input type="checkbox" id="input38" name="input38"><br>
+              <label>Incremental Motion Control &nbsp;&nbsp;</label><input type="checkbox" id="input39" name="input39"><br>
+              <label>Insulation and Testing Engineering &nbsp;&nbsp;</label><input type="checkbox" id="input40" name="input40"><br>   
+              <label>Lighting Science: Devices and Systems &nbsp;&nbsp;</label><input type="checkbox" id="input41" name="input41"><br>
+              <label>Linear and Nonlinear Systems &nbsp;&nbsp;</label><input type="checkbox" id="input42" name="input42"><br>
+              <label>High-Voltage Engineering &nbsp;&nbsp;</label><input type="checkbox" id="input43" name="input43"><br>
+              <label>Industrial Automation & Control &nbsp;&nbsp;</label><input type="checkbox" id="input44" name="input44"><br>
+              <label>Intel la-32 Architecture &nbsp;&nbsp;</label><input type="checkbox" id="input45" name="input45"><br>
+              <label>Linear And Digital Control Theory &nbsp;&nbsp;</label><input type="checkbox" id="input46" name="input46"><br>
+              <label>Measurements & Instrumentation &nbsp;&nbsp;</label><input type="checkbox" id="input47" name="input47"><br>
+              <label>Microprocessors &nbsp;&nbsp;</label><input type="checkbox" id="input48" name="input48"><br>
+              <label>Modern Power Converters &nbsp;&nbsp;</label><input type="checkbox" id="input49" name="input49"><br>
+              <label>Neural Networks and Applications &nbsp;&nbsp;</label><input type="checkbox" id="input50" name="input50"><br>
+              <label>Photovoltaics and Applications &nbsp;&nbsp;</label><input type="checkbox" id="input51" name="input51"><br>
+              <label>Modelling and Simulation Techniques for Dynamic Systems &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input50"><br>
+              <label>Network Synthesis &nbsp;&nbsp;</label><input type="checkbox" id="input52" name="input52"><br>
+              <label>Non-Conventional Energy Systems &nbsp;&nbsp;</label><input type="checkbox" id="input53" name="input53"><br>
+              <label>Polyphase Systems and Component Transformation &nbsp;&nbsp;</label><input type="checkbox" id="input54" name="input54"><br>
+              <label>Power Electronics &nbsp;&nbsp;</label><input type="checkbox" id="input55" name="input55"><br>
+              <label>Power System Engineering &nbsp;&nbsp;</label><input type="checkbox" id="input56" name="input56"><br>
+              <label>Real Time Systems &nbsp;&nbsp;</label><input type="checkbox" id="input57" name="input57"><br>
+              <label>Sensor Technology and Instrumentation Design &nbsp;&nbsp;</label><input type="checkbox" id="input58" name="input58"><br>
+              <label>Power Generation and Economics &nbsp;&nbsp;</label><input type="checkbox" id="input59" name="input59"><br>
+              <label>Power System Protection,Regulation & Security &nbsp;&nbsp;</label><input type="checkbox" id="input60" name="input60"><br>
+              <label>Renewable Energy &nbsp;&nbsp;</label><input type="checkbox" id="input61" name="input61"><br>
+              <label>Signal Processing &nbsp;&nbsp;</label><input type="checkbox" id="input62" name="input62"><br>
+              <label>Smart Grid Technologies &nbsp;&nbsp;</label><input type="checkbox" id="input63" name="input63"><br>
+              <label>Switchgear and Protection &nbsp;&nbsp;</label><input type="checkbox" id="input64" name="input64"><br>
+              <label>Solid State Drives &nbsp;&nbsp;</label><input type="checkbox" id="input65" name="input65"><br>
+              <label>Traveling waves on Transmission System  &nbsp;&nbsp;</label><input type="checkbox" id="input66" name="input66"><br>
+              <label>System Design & Computer Architecture &nbsp;&nbsp;</label><input type="checkbox" id="input67" name="input67"><br>
+              <label>Very LArge Scale Integration (VLSI) Design &nbsp;&nbsp;</label><input type="checkbox" id="input68" name="input68"><br>
+                           
+             
+             
+             
+            
+             
+          </div>
+          <div class="modal-footer">
+                  <a href="#"  data-toggle="modal" data-target="#modal11">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                   <a href="#"  data-toggle="modal" data-target="#modal13">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+
+          </div>
+
+      </div>
+  </div>
+
+
+
+</div>
+  
+  <!-- modal12 -->
+
+</div>
+
+<div class="modal" id="modal12">
+  <div class="modal-dialog" id="modal3">
+      <div class="modal-content">
+
+          <div class="modal-header">
+              <h4 class="modal-title"><b>Find Best BTech Tution near me </b></h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <br>
+          <h5>&nbsp; Which of the following BTech Mechanical subjects do you require tution for?</h5>
+
+
+          <div class="modal-body">
+              <label>Analysis and design of Machine Components &nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"><br>
+              <label>Automative Fuels and Fuel Systems &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"><br>
+              <label>Composites : Mechanics & Processing &nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"><br>
+              <label>Computer Integrated Manufacturing &nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4"><br>
+              <label>Cryogenics &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"><br>
+              <label>CAD-CAM &nbsp;&nbsp;</label><input type="checkbox" id="input6" name="input6"><br>
+              <label>Automobile Engineering &nbsp;&nbsp;</label><input type="checkbox" id="input7" name="input7"><br>
+              <label>Computational Fluid Dynamics &nbsp;&nbsp;</label><input type="checkbox" id="input8" name="input8"><br>
+              <label>Design Engineering &nbsp;&nbsp;</label><input type="checkbox" id="input9" name="input9"><br>
+              <label>Refirgreation & Air Conditioning Systems &nbsp;&nbsp;</label><input type="checkbox" id="input10" name="input10"><br>
+              <label>Elasticity & Plasticity &nbsp;&nbsp;</label><input type="checkbox" id="input11" name="input11"><br>
+              <label>Electronic Measurement & Instrumentation &nbsp;&nbsp;</label><input type="checkbox" id="input12" name="input12"><br>
+              <label>Engineering Acoustics  &nbsp;&nbsp;</label><input type="checkbox" id="input13" name="input13"><br>
+              <label>Environmental Pollution Control&nbsp;&nbsp;</label><input type="checkbox" id="input14" name="input14"><br>
+              <label>Dynamics of Machinery&nbsp;&nbsp;</label><input type="checkbox" id="input15" name="input15"><br>
+              <label>Electro Magnetic Theory &nbsp;&nbsp;</label><input type="checkbox" id="input16" name="input16"><br>
+              <label>Energy Engineering and Management &nbsp;&nbsp;</label><input type="checkbox" id="input17" name="input17"><br>
+              <label>Engineering Drawing & Graphics &nbsp;&nbsp;</label><input type="checkbox" id="input18" name="input18"><br>
+              <label>Finite Element Analysis &nbsp;&nbsp;</label><input type="checkbox" id="input19" name="input19"><br>
+              <label>Fluid Drives and Control &nbsp;&nbsp;</label><input type="checkbox" id="input20" name="input20"><br>   
+              <label>Heat & Mass Transfer&nbsp;&nbsp;</label><input type="checkbox" id="input21" name="input21"><br>
+              <label>Hydraulic and Pneumatic Control &nbsp;&nbsp;</label><input type="checkbox" id="input22" name="input22"><br>
+              <label>Intelligent Systems &nbsp;&nbsp;</label><input type="checkbox" id="input23" name="input23"><br>
+              <label>Jet Propulsion and Rocket Technology &nbsp;&nbsp;</label><input type="checkbox" id="input24" name="input24"><br>
+              <label>Fluid Mechanics &nbsp;&nbsp;</label><input type="checkbox" id="input25" name="input25"><br>
+              <label>Heat Treatment Of Metals and Alloys &nbsp;&nbsp;</label><input type="checkbox" id="input26" name="input26"><br>
+              <label>Industrial Robotics &nbsp;&nbsp;</label><input type="checkbox" id="input27" name="input27"><br>
+              <label>Internal Combustion Engines and Emissions &nbsp;&nbsp;</label><input type="checkbox" id="input28" name="input28"><br>
+              <label>Kinematics of Machinery &nbsp;&nbsp;</label><input type="checkbox" id="input29" name="input29"><br>
+              <label>Machine Design &nbsp;&nbsp;</label><input type="checkbox" id="input30" name="input30"><br>
+              <label>Machine Tool Technology &nbsp;&nbsp;</label><input type="checkbox" id="input31" name="input31"><br>
+              <label>Material Science and Metallurgy  &nbsp;&nbsp;</label><input type="checkbox" id="input32" name="input32"><br>
+              <label>Metrology,Mechanical Measurements and Instrumentation &nbsp;&nbsp;</label><input type="checkbox" id="input33" name="input33"><br>
+              <label>Machine Dynamics and Vibrations/Acoustics &nbsp;&nbsp;</label><input type="checkbox" id="input34" name="input34"><br>
+              <label>Manufacturing Technology &nbsp;&nbsp;</label><input type="checkbox" id="input35" name="input35"><br>
+              <label>Mechanical Behaviour of Engineering Materials &nbsp;&nbsp;</label><input type="checkbox" id="input36" name="input36"><br>
+              <label>Mechanics of Machines &nbsp;&nbsp;</label><input type="checkbox" id="input37" name="input37"><br>
+              <label>Mechantronics Engineering &nbsp;&nbsp;</label><input type="checkbox" id="input38" name="input38"><br>
+              <label>Micr-Electromagnetic Systems (MEMS) and NAno Technology &nbsp;&nbsp;</label><input type="checkbox" id="input39" name="input39"><br>
+              <label>Destructive & Non Destructive Testing/Fracture Mechanics &nbsp;&nbsp;</label><input type="checkbox" id="input40" name="input40"><br>   
+              <label>Operations Research &nbsp;&nbsp;</label><input type="checkbox" id="input41" name="input41"><br>
+              <label>Micro Machining  &nbsp;&nbsp;</label><input type="checkbox" id="input42" name="input42"><br>
+              <label>Modeling and simulation of Engineering  &nbsp;&nbsp;</label><input type="checkbox" id="input43" name="input43"><br>
+              <label>Non-Conventional Energy Sources/Solar Energy  &nbsp;&nbsp;</label><input type="checkbox" id="input44" name="input44"><br>
+              <label>Plant Layout and Material Handling &nbsp;&nbsp;</label><input type="checkbox" id="input45" name="input45"><br>
+              <label>Linear And Digital Control Theory &nbsp;&nbsp;</label><input type="checkbox" id="input46" name="input46"><br>
+              <label>Measurements & Instrumentation &nbsp;&nbsp;</label><input type="checkbox" id="input47" name="input47"><br>
+              <label>Microprocessors &nbsp;&nbsp;</label><input type="checkbox" id="input48" name="input48"><br>
+              <label>Modern Power Converters &nbsp;&nbsp;</label><input type="checkbox" id="input49" name="input49"><br>
+              <label>Neural Networks and Applications &nbsp;&nbsp;</label><input type="checkbox" id="input50" name="input50"><br>
+              <label>Photovoltaics and Applications &nbsp;&nbsp;</label><input type="checkbox" id="input51" name="input51"><br>
+              <label>Modelling and Simulation Techniques for Dynamic Systems &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input50"><br>
+              <label>Network Synthesis &nbsp;&nbsp;</label><input type="checkbox" id="input52" name="input52"><br>
+              <label>Non-Conventional Energy Systems &nbsp;&nbsp;</label><input type="checkbox" id="input53" name="input53"><br>
+              <label>Polyphase Systems and Component Transformation &nbsp;&nbsp;</label><input type="checkbox" id="input54" name="input54"><br>
+              <label>Power Electronics &nbsp;&nbsp;</label><input type="checkbox" id="input55" name="input55"><br>
+              <label>Power System Engineering &nbsp;&nbsp;</label><input type="checkbox" id="input56" name="input56"><br>
+              <label>Real Time Systems &nbsp;&nbsp;</label><input type="checkbox" id="input57" name="input57"><br>
+              <label>Sensor Technology and Instrumentation Design &nbsp;&nbsp;</label><input type="checkbox" id="input58" name="input58"><br>
+              <label>Power Generation and Economics &nbsp;&nbsp;</label><input type="checkbox" id="input59" name="input59"><br>
+              <label>Power System Protection,Regulation & Security &nbsp;&nbsp;</label><input type="checkbox" id="input60" name="input60"><br>
+              <label>Renewable Energy &nbsp;&nbsp;</label><input type="checkbox" id="input61" name="input61"><br>
+              <label>Signal Processing &nbsp;&nbsp;</label><input type="checkbox" id="input62" name="input62"><br>
+              <label>Smart Grid Technologies &nbsp;&nbsp;</label><input type="checkbox" id="input63" name="input63"><br>
+              <label>Switchgear and Protection &nbsp;&nbsp;</label><input type="checkbox" id="input64" name="input64"><br>
+              <label>Solid State Drives &nbsp;&nbsp;</label><input type="checkbox" id="input65" name="input65"><br>
+              <label>Traveling waves on Transmission System  &nbsp;&nbsp;</label><input type="checkbox" id="input66" name="input66"><br>
+              <label>System Design & Computer Architecture &nbsp;&nbsp;</label><input type="checkbox" id="input67" name="input67"><br>
+              <label>Very LArge Scale Integration (VLSI) Design &nbsp;&nbsp;</label><input type="checkbox" id="input68" name="input68"><br>
+                           
+             
+             
+             
+            
+             
+          </div>
+          <div class="modal-footer">
+                  <a href="#"  data-toggle="modal" data-target="#modal11">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                   <a href="#"  data-toggle="modal" data-target="#modal13">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+
+          </div>
+
+      </div>
+  </div>
+
+
+
+</div>
+  
+  
+  
+<div class="modal" id="modal010">
+    <div class="modal-dialog" id="modal3">
+        <div class="modal-content">
+  
+            <div class="modal-header">
+                <h4 class="modal-title"><b>Find Best BSc Tution near me </b></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <br>
+            <h5>&nbsp;Which of the following BSc branches do you belong to ? </h5>
+  
+  
+            <div class="modal-body">
+                  <label>BSc Biochemistry&nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"><br>
+                  <label>BSc Botany &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"><br>
+                  <label>BSc Computer Science &nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"><br>
+                  <label>BSc Mathematics&nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4"><br>
+                  <label>BSc Physics &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"><br>
+                  <label>BSc Chemistry&nbsp;&nbsp;</label><input type="checkbox" id="input6" name="input6"><br>
+                  <label>BSc Electronics &nbsp;&nbsp;</label><input type="checkbox" id="input7" name="input7"><br>
+                  <label>BSc Statistics&nbsp;&nbsp;</label><input type="checkbox" id="input8" name="input8"><br>
+                  <label>BSc Micro Biology &nbsp;&nbsp;</label><input type="checkbox" id="input9" name="input9"><br>
+                  <label>BSc Zoology &nbsp;&nbsp;</label><input type="checkbox" id="input10" name="input10"><br>
+                  <label>BSc IT &nbsp;&nbsp;</label><input type="checkbox" id="input11" name="input11"><br>
+                  <label>BSc Economics &nbsp;&nbsp;</label><input type="checkbox" id="input12" name="input12"><br>
+                
+                 
+            </div>
+            <div class="modal-footer">
+                    <a href="#"  data-toggle="modal" data-target="#modal10*">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                     <a href="#"  data-toggle="modal" data-target="#modal*">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+  
+            </div>
+  
+        </div>
+    </div>
+  
+  
+  
+  </div>
 
 <!-- MODAL ENDS -->
 
@@ -422,6 +920,213 @@
 
 </div>
      
+<!-- bcom -->
+<div class="modal" id="modal50">
+    <div class="modal-dialog" id="modal3">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title"><b>Find best Bcom tutions near me ?</b></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <br>
+            <h5>&nbsp;Which of the following Bcom subjects do you require tution for?</h5>
+
+            <div class="modal-body " >
+                  <label>Accounting Information System &nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"><br>
+                  <label>Auditing and Corporate Goverance&nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"><br>
+                  <label>Banking Law and Operation&nbsp;&nbsp;</label><input type="checkbox" id="input3" name="input3"><br>
+                  <label>Business Communication &nbsp;&nbsp;</label><input type="checkbox" id="input4" name="input4"><br>
+                  <label>Advertising &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"><br>
+                  <label>Business Laws &nbsp;&nbsp;</label><input type="checkbox" id="input6" name="input6"><br>
+                  <label>Banking Insurance &nbsp;&nbsp;</label><input type="checkbox" id="input7" name="input7"><br>
+                  <label>Banking Technology and Managment &nbsp;&nbsp;</label><input type="checkbox" id="input8" name="input8"><br>
+                  <label>Business Ethics &nbsp;&nbsp;</label><input type="checkbox" id="input9" name="input9"><br>
+                  <label>Business Mathematics and Stastics &nbsp;&nbsp;</label><input type="checkbox" id="input10" name="input10"><br>
+                  <label>Business Organisation and Managment &nbsp;&nbsp;</label><input type="checkbox" id="input5" name="input5"><br>
+                  <label>Company Law &nbsp;&nbsp;</label><input type="checkbox" id="input6" name="input6"><br>
+                  <label>Business Taxtion &nbsp;&nbsp;</label><input type="checkbox" id="input7" name="input7"><br>
+                  <label>Cost Accounting &nbsp;&nbsp;</label><input type="checkbox" id="input8" name="input8"><br>
+                  <label>Business Ethics &nbsp;&nbsp;</label><input type="checkbox" id="input9" name="input9"><br>
+                  <label>Corporate Accounting &nbsp;&nbsp;</label><input type="checkbox" id="input10" name="input10"><br>
+                
+              </div>
+            <div class="modal-footer">
+                <a href="#"  data-toggle="modal" data-target="#modal*">  <button type="button" class="btn btn-outline-danger" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                <a href="#"  data-toggle="modal" data-target="#modal*">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+<!-- MODAL FOR IELETS -->
+<div class="modal" id="modal001">
+    <div class="modal-dialog" id="modal3">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title"><b>Find Best IELETS Coaching near me </b></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <br>
+            <h5>&nbsp;Which of the following will you be attempting ?</h5>
+
+            <div class="modal-body ">
+                  
+              <label>General (For intending to work in a non technical job abroad) &nbsp;&nbsp;</label><input type="checkbox"  id="input1" name="input1"> 
+              <label>Academics (For students) &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"> 
+                  
+              </div>
+            <div class="modal-footer">
+                <a href="#"  data-toggle="modal" data-target="#modal001">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                <a href="#"  data-toggle="modal" data-target="#modal002">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+<div class="modal" id="modal002">
+        <div class="modal-dialog" id="modal3">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title"><b>Find Best IELETS Coaching near me </b></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <br>
+                <h5>&nbsp;Which location would you prefer for IELETS coaching classes?</h5>
+
+                <div class="modal-body ">
+                      
+                  <label>My Home &nbsp;&nbsp;</label><input type="checkbox"  id="input1" name="input1"> 
+                  <label>Tutor's Home&nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"> 
+                  <label>Institute or Coaching Center&nbsp;&nbsp;</label><input type="checkbox"  id="input1" name="input1"> 
+                  <label>Want to learn Online via Internet? &nbsp;&nbsp;<a href="#"> Click here  &nbsp;&nbsp;</a></label><input type="checkbox" id="input3" name="input3">  
+                  </div>
+                <div class="modal-footer">
+                    <a href="#"  data-toggle="modal" data-target="#modal001">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                    <a href="#"  data-toggle="modal" data-target="#modal003">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="modal" id="modal003">
+            <div class="modal-dialog" id="modal3">
+                <div class="modal-content">
+    
+                    <div class="modal-header">
+                        <h4 class="modal-title"><b>Find Best IELETS Coaching near me </b></h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <br>
+                    <h5>&nbsp;What is your background ?</h5>
+    
+                    <div class="modal-body ">
+                          
+                      <label>Student &nbsp;&nbsp;</label><input type="checkbox"  id="input1" name="input1"> 
+                      <label>Working Professional &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"> 
+                      <label>Other &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"> 
+                          
+                      </div>
+                    <div class="modal-footer">
+                        <a href="#"  data-toggle="modal" data-target="#modal002">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                        <a href="#"  data-toggle="modal" data-target="#modal004">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+        <div class="modal" id="modal004">
+                <div class="modal-dialog" id="modal3">
+                    <div class="modal-content">
+        
+                        <div class="modal-header">
+                            <h4 class="modal-title"><b>Find Best IELETS Coaching near me </b></h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <br>
+                        <h5>&nbsp;Have you ever appeared for IELETS exams before ?</h5>
+        
+                        <div class="modal-body ">
+                              
+                          <label>Yes&nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"> 
+                          <label>No&nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"> 
+                              
+                          </div>
+                        <div class="modal-footer">
+                            <a href="#"  data-toggle="modal" data-target="#modal003">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                             </div>
+        
+                    </div>
+                </div>
+        
+            </div>     
+<!-- MODAL FOR GRE -->
+
+    <div class="modal" id="modal005">
+            <div class="modal-dialog" id="modal3">
+                <div class="modal-content">
+    
+                    <div class="modal-header">
+                        <h4 class="modal-title"><b>Find Best GRE Coaching near me </b></h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <br>
+                    <h5>&nbsp;Have you ever appeared for GRE exams before ?</h5>
+    
+                    <div class="modal-body ">
+                          
+                      <label>Yes&nbsp;&nbsp;</label><input type="checkbox" id="input1" name="input1"> 
+                      <label>No&nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"> 
+                          
+                      </div>
+                    <div class="modal-footer">
+                        <a href="#"  data-toggle="modal" data-target="#modal003">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                        <a href="#"  data-toggle="modal" data-target="#modal003">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                         </div>
+    
+                </div>
+            </div>
+    
+        </div>     
+        <div class="modal" id="modal006">
+                <div class="modal-dialog" id="modal3">
+                    <div class="modal-content">
+        
+                        <div class="modal-header">
+                            <h4 class="modal-title"><b>Find Best GRE Coaching near me </b></h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <br>
+                        <h5>&nbsp;Which section do you need help with ?</h5>
+        
+                        <div class="modal-body ">
+                              
+                          <label>Reading &nbsp;&nbsp;</label><input type="checkbox"  id="input1" name="input1"> 
+                          <label>Writing &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"> 
+                          <label>Speaking &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"> 
+                          <label>Listening &nbsp;&nbsp;</label><input type="checkbox" id="input2" name="input2"> 
+                              
+                          </div>
+                        <div class="modal-footer">
+                            <a href="#"  data-toggle="modal" data-target="#modal001">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Back</button></a>
+                            <a href="#"  data-toggle="modal" data-target="#modal002">  <button type="button" class="btn btn-outline-success" onclick="getdata()" data-dismiss="modal" >Next</button></a>
+                        </div>
+        
+                    </div>
+                </div>
+        
+            </div>
+
           <!-- <div id="container11" class="col-xl-7 col-lg-7 col-md-7 col-12">
         <div class="container-fluid"> -->
           
